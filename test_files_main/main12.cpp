@@ -1,6 +1,7 @@
+#include <cstdlib>
 #include <iostream>
-/* Custom deleter */
 
+/* Dynamic array with smart pointers */
 struct Free{
     void operator()(int * p){
         free(p);
@@ -27,6 +28,8 @@ void SharedPtrDeleter(){
     std::cout << *p << "\n";
 }
 
-int main11() {
-    SharedPtrDeleter();
+int main12() {
+    std::shared_ptr<int[]> p{new int[5]{1,2,3,4,5}};
+    p[0] = 10;
+
 }
