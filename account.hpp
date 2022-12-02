@@ -3,10 +3,11 @@
 #include <string>
 
 class Account{
-    std::string name;
-    long double balance;
+protected:    
+    std::string name;   
     long int acc_num;
     static long int acc_num_generator;
+    long double balance;
 public:
     Account(const std::string &name, long double balance);
     ~Account();
