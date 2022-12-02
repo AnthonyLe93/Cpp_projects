@@ -1,6 +1,6 @@
 #include <iostream>
 
-
+/* Inheritance and Composition */
 class Animal{
 public:
     void Eat(){
