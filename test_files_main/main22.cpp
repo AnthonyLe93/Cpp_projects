@@ -4,7 +4,7 @@
 /* Union */
 
 
-int main(){
+int main22(){
     // Test t;
     // std::cout << sizeof(t) << std::endl;
     // std::cout << t.ch << std::endl;
