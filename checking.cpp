@@ -16,6 +16,6 @@ void Checking::Withdraw(long double amount){
 }
 
 Checking::~Checking(){
-
+    std::cout <<"~Saving()" << std::endl;
 }
  

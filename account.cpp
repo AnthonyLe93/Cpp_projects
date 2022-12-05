@@ -8,6 +8,7 @@ long int Account::acc_num_generator = 250219930;
 Account::Account(const std::string &name, long double balance)
 : name{name}, balance{balance} {
     acc_num =  ++acc_num_generator;
+    std::cout << "Account(const std::string &name, long double balance)" << std::endl;
 } 
 
 const std::string Account::GetName()const{
@@ -55,6 +56,6 @@ void Account::PrintAccInfo(){
 }
 
 Account::~Account(){
-    
+    std::cout <<"~Account()" << std::endl;
 }
 

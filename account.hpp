@@ -10,7 +10,7 @@ protected:
     long double balance;
 public:
     Account(const std::string &name, long double balance);
-    ~Account();
+    virtual ~Account();
     const std::string GetName()const;
     float GetBalance()const;
     int GetAccNum()const;
