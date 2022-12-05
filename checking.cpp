@@ -19,13 +19,15 @@ void Checking::Withdraw(long double amount){
         std::cout << "Invalid amount" << std::endl;
     }
 }
-float Checking::GetMinBalance(){
+float Checking::GetMinBalance()const{
     return min_balance;
 }
 
-float Checking::SetMinBalance(float amount){
+float Checking::SetMinBalance(const float &amount){
     return min_balance = amount;
 }
+
+
 
 Checking::~Checking(){
     std::cout <<"~Saving()" << std::endl;

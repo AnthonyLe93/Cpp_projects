@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include <typeinfo>
 #include "account.hpp"
 #include "saving.hpp"
 #include "checking.hpp"
 #include "transaction.hpp"
+
 
 int main(){
     
@@ -29,9 +31,12 @@ int main(){
 
     // Checking & pChecking = static_cast<Checking &>(ca);//Downcasting a base class to child class
 
-    // std::cout << acc_ch.SetMinBalance(100) << std::endl;
+    // std::cout << acc_ch.SetMinBalance(11.123) << std::endl;
     // std::cout << acc_ch.GetMinBalance() << std::endl;
+    Transaction(&acc_ch);
 
-    
+    Saving acc_save {"Emily_saver", 2000, 0.05f};
+    Transaction(&acc_save);
+
     return 0;
 }
