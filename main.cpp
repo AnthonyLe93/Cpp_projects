@@ -19,9 +19,19 @@ int main(){
 
     // Checking acc_checking("Anthony_checking", 10000.00);
     // Transaction(&acc_checking);
-    Account *acc_saving = new Saving("Anthony_saver", 20000.00, 0.1f);
-    //Transaction(&acc_saving);
-    //std::cout << "Size of Account " << sizeof(Account) << std::endl;
-    delete acc_saving;
+    // Account *acc_saving = new Saving("Anthony_saver", 20000.00, 0.1f);
+    // Transaction(&acc_saving);
+    // std::cout << "Size of Account " << sizeof(Account) << std::endl;
+    // delete acc_saving;
+
+    Checking acc_ch {"Emily", 1000, 50};
+    // Account &ca = acc_ch; //Upcasting a child class to base class (must use pointer or ref)
+
+    // Checking & pChecking = static_cast<Checking &>(ca);//Downcasting a base class to child class
+
+    // std::cout << acc_ch.SetMinBalance(100) << std::endl;
+    // std::cout << acc_ch.GetMinBalance() << std::endl;
+
+    
     return 0;
 }

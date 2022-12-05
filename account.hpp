@@ -16,8 +16,8 @@ public:
     int GetAccNum()const;
 
     virtual void AccumulateInterest();
-    void Withdraw(long double amount);
+    virtual void Withdraw(long double amount);
     void Deposit(long double amount);
     virtual float GetInterestRate()const;
-    void PrintAccInfo();
+    virtual void PrintAccInfo();
 };
