@@ -36,7 +36,11 @@ int main(){
     Transaction(&acc_ch);
 
     Saving acc_save {"Emily_saver", 2000, 0.05f};
-    Transaction(&acc_save);
+    try{ 
+        Transaction(acc_save);
+    }catch(std::exception &ex){
+        std::cout << "Exception: " << ex.what() << '\n';
+    }
 
     return 0;
 }
