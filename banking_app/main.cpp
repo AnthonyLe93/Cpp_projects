@@ -1,6 +1,25 @@
 #include <iostream>
+#include <memory>
+#include <vector>
+
+
+/* Exception Handling*/
+
+class Test{
+public:
+    Test(){
+        std::cout << "Test()" <<std::endl;
+    }
+
+    ~Test(){
+        std::cout << "~Test()" <<std::endl;
+    }
+};
 
 int ProcessRecord(int count){
+
+    std::unique_ptr<Test> t(new Test);
+
     if (count <10){
         throw std::out_of_range("Count should be greater than 10");
     }
@@ -14,6 +33,25 @@ int ProcessRecord(int count){
     }
 
     free(pArray);
+    delete[] p;
+    return 0;
+}
+
+int ProcessRecord(int count, int id){
+    std::unique_ptr<Test> t(new Test);
+
+    if (count <10){
+        throw std::out_of_range("Count should be greater than 10");
+    }
+    std::vector<int> p;
+    p.reserve(count);
+    std::vector<int> pArray;
+    pArray.reserve(count);
+    //Process the record
+    for(int i = 0; i < count; ++i){
+        pArray.push_back(i);
+    }
+
     return 0;
 }
 
