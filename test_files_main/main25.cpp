@@ -1,6 +1,6 @@
 # include <iostream>
 # include <string>
-
+/* Diamond inheritance */
 class Stream {
     std::string filename;
 public:
