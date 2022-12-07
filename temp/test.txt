@@ -1,2 +1,2 @@
-Hello world
-101
+C++ was invented by Bjarne.
+This is an example text filecreate for learning modern C++.

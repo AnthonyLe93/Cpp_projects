@@ -39,7 +39,7 @@ void Read() {
     std::cout << message << ": " << value << std::endl;
 }
 
-int main(){
+int main29(){
     Write();
     Read();
     return 0;
