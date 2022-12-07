@@ -61,7 +61,11 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "deque": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "stack": "cpp"
     },
     "C_Cpp.default.cppStandard": "c++17"
 }
