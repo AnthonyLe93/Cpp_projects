@@ -48,7 +48,7 @@ void PrettyPrinter<std::vector<int>>::Print(){
 // };
 
 
-int main(){
+int main36(){
     // int data = 5;
     // float f = 8.2f;
     // PrettyPrinter<int> pp1{&data};
