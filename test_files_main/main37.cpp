@@ -78,7 +78,7 @@ public:
 
 
 
-int main(){
+int main37(){
     
     int data{777};
     PrettyPrinter<int, 50> pp1{&data};
